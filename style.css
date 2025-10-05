@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+}
+
+/* Style the original table structure */
+table[align="center"][width="100%"] {
+    max-width: 1200px;
+    margin: 2rem auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    overflow: hidden;
+    border-collapse: separate;
+    border-spacing: 0;
+}
+
+table[align="center"][width="100%"] td {
+    padding: 2rem;
+    vertical-align: top;
+}
+
+/* First row - Header */
+table[align="center"][width="100%"] tr:first-child td {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8);
+    color: white;
+    text-align: center;
+}
+
+table[align="center"][width="100%"] tr:first-child h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+}
+
+table[align="center"][width="100%"] tr:first-child h3 {
+    font-size: 1.1rem;
+    font-weight: 400;
+    opacity: 0.9;
+    margin-bottom: 0.25rem;
+}
+
+/* Second row - Navigation */
+table[align="center"][width="100%"] tr:nth-child(2) td {
+    background: #f8fafc;
+    border-bottom: 1px solid #e2e8f0;
+    padding: 1rem 2rem;
+}
+
+/* Navigation links styling */
+table[align="center"][width="100%"] tr:nth-child(2) a {
+    color: #2563eb;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    margin: 0 0.25rem;
+}
+
+table[align="center"][width="100%"] tr:nth-child(2) a:hover {
+    background: #2563eb;
+    color: white;
+}
+
+/* Content rows */
+table[align="center"][width="100%"] tr:nth-child(n+3) td {
+    background: #f8fafc;
+    border-left: 4px solid #2563eb;
+    margin-bottom: 1rem;
+}
+
+/* Content styling */
+table[align="center"][width="100%"] p {
+    margin-bottom: 1rem;
+    line-height: 1.7;
+}
+
+table[align="center"][width="100%"] ul {
+    margin-left: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+table[align="center"][width="100%"] li {
+    margin-bottom: 0.5rem;
+}
+
+table[align="center"][width="100%"] b {
+    color: #2563eb;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+/* Tables */
+.table-wrapper {
+    overflow-x: auto;
+    margin: 1.5rem 0;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    font-size: 14px;
+}
+
+/* Tables within sections should not have extra wrapper styling */
+.section table {
+    margin: 1rem 0;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+th {
+    background: #2563eb;
+    color: white;
+    padding: 1rem;
+    text-align: left;
+    font-weight: 600;
+}
+
+td {
+    padding: 0.8rem 1rem;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+tr:hover {
+    background: #f1f5f9;
+}
+
+tr.light-text-row {
+    opacity: 0.7;
+}
+
+/* Links */
+a {
+    color: #2563eb;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Clock */
+#txt {
+    background: #eff6ff;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    font-weight: 500;
+    color: #2563eb;
+    display: inline-block;
+    margin: 1rem 0;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    padding: 2rem;
+    background: #f8fafc;
+    border-top: 1px solid #e2e8f0;
+    color: #64748b;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .main-container {
+        margin: 1rem;
+    }
+    
+    .header {
+        padding: 1.5rem;
+    }
+    
+    .header h1 {
+        font-size: 2rem;
+    }
+    
+    .content {
+        padding: 1rem;
+    }
+    
+    .section {
+        padding: 1rem;
+    }
+    
+    .nav-links {
+        gap: 0.25rem;
+        font-size: 0.9rem;
+    }
+    
+    table {
+        font-size: 12px;
+    }
+    
+    th, td {
+        padding: 0.5rem;
+    }
+}
+
+/* Scroll to top button */
+.scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    width: 50px;
+    height: 50px;
+    background: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+}
+
+.scroll-top:hover {
+    background: #1d4ed8;
+    transform: translateY(-2px);
+}
+
+.scroll-top.visible {
+    display: flex;
+}

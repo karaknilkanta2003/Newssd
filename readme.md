@@ -24,10 +24,10 @@ This project demonstrates the use of **front-end web technologies** for building
 
 | Component | Technology |
 |------------|-------------|
-| **Frontend Markup** | HTML5 |
-| **Styling Frameworks** | CSS3, Bootstrap 4.6 |
+| **Frontend Markup** | HTML |
+| **Styling Frameworks** | CSS3 |
 | **Typography** | Google Fonts (Inter) |
-| **Scripting** | Vanilla JavaScript (ES6) |
+|
 | **Hosting** | GitHub Pages |
 
 ---
